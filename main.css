@@ -1,0 +1,366 @@
+/* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }*/
+
+ @font-face {
+   font-family: alegreyaSans;
+   src: url("assets/fonts/AlegreyaSans-Medium.ttf");
+}
+
+html, body, div, span, h1, h2, h3, p, a,
+img, strong, center, ol, ul, li, fieldset,
+form, label, footer, header, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+/* Basic */
+
+    @-ms-viewport {
+        width: device-width;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+body {
+    background: #F1F0DA;
+    font-family: alegreyaSans;
+    color: #282634;
+    line-height: 1.75em;
+    font-size: 13pt;
+    position: relative;
+}
+
+#page-wrapper {
+    margin-top: -2em;
+}
+
+#menu-bar {
+    position: absolute;
+    background-image: url("assets/triangle-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    margin: 0 auto;
+    min-width: 100%;
+    z-index: 1;
+    display: block;
+}
+
+#alt-header {
+    position: absolute;
+    background-image: url("assets/alt-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    min-width: 100%;
+    z-index: 1;
+    display: block;
+    min-height: 600px;
+}
+
+nav {
+    position: absolute;
+    right: 2em;
+    top: 1em;
+}
+
+    nav > ul {
+        list-style: none;
+    }
+
+    nav > ul a {
+        text-decoration: none;
+        color: white;
+        font-weight: 100 !important;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        margin: 1em;
+        margin-top: 0;
+    }
+
+#page-title {
+    position: absolute;
+    display: block;
+    width: 50%;
+    z-index: 10;
+    top: 18em;
+    left: 12em;
+}
+
+    #page-title h1 {
+        color: white;
+        font-size: 3vw;
+    }
+
+    #page-title br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 24%;
+    }
+
+#alt-page-title {
+    position: absolute;
+    display: block;
+    width: 50%;
+    z-index: 10;
+    top: 21em;
+    left: 14em;
+}
+
+    #alt-page-title h1 {
+        color: white;
+        font-size: 3.5vw;
+    }
+
+    #alt-page-title br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 24%;
+    }
+
+#alt-body {
+    position: relative;
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    top: 40em;
+
+}
+
+    #alt-body .player-container-left {
+        margin-top: 2em;
+        margin-left: 10em;
+        width: 80%;
+        padding: 8em;
+        background-color: #007e37;
+        display: grid;
+        grid-template-columns: auto auto;
+        border-radius: 25px;
+    }
+
+        #alt-body .player-container-left img {
+            position: absolute;
+            height: 18%;
+            margin-top: -11em;
+            margin-left: -9em;
+        }
+
+        #alt-body .player-container-left section {
+            position: absolute;
+            color: #F1F0DA;
+            font-size: 16pt;
+            text-align: left;
+            margin-top: -4em;
+            margin-left: 20em;
+        }
+
+            #alt-body .player-container-left section h2 {
+                font-size: 30pt;
+                margin-bottom: .5em;
+            }
+
+            #alt-body .player-container-left section ul > li {
+                list-style: circle;
+                margin-bottom: .25em;
+            }
+
+    #alt-body .player-container-right {
+        margin-top: 2em;
+        margin-left: 10em;
+        width: 80%;
+        padding: 8em;
+        background-color: #F75312;
+        display: grid;
+        grid-template-columns: auto auto;
+        border-radius: 25px;
+    }
+
+        #alt-body .player-container-right img {
+            position: absolute;
+            height: 18%;
+            margin-left: 37em;
+            margin-top: -11em;
+        }
+
+        #alt-body .player-container-right section {
+            position: absolute;
+            color: #F1F0DA;
+            font-size: 16pt;
+            text-align: left;
+            margin-top: -4em;
+        }
+
+            #alt-body .player-container-right section h2 {
+                font-size: 30pt;
+                margin-bottom: .5em;
+            }
+
+            #alt-body .player-container-right section ul > li {
+                list-style: circle;
+                margin-bottom: .25em;
+            }
+
+#learn-more {
+    position: absolute;
+    display: flex;
+    top: 40em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+    #learn-more h2 {
+        font-size: 2vw;
+    }
+
+.grid-container {
+    position: absolute;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    z-index: 20;
+    height: 50px;
+    top: 41em;
+    left: 12em;
+}
+
+.grid-1 {
+    padding: 1em;
+    margin: 2em;
+    height: 50px;
+    text-align: center;
+    display: block;
+    font-size: 14pt;
+    justify-content: center;
+}
+
+    .grid-1 .pic-container {
+        width: 250px;
+        height: 250px;
+    }
+
+        .grid-1 .pic-container img {
+            border-radius: 25px;
+            width: 100%;
+            filter: drop-shadow(0 0 0.25rem black);
+        }
+
+    .grid-1 p {
+        padding-top: 1em;
+    }
+
+#banner {
+    position: absolute;
+    display: block;
+    top: 70em;
+    color: #F1F0DA;
+    font-weight: bold;
+    width: 100%;
+}
+
+    #banner img {
+        width: 100%;
+    }
+
+    #banner section {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        margin-top: -12em;
+    }
+
+    #banner section h2 {
+        display: block;
+        font-size: 25pt;
+        padding-bottom: 15px;
+    }
+
+    #banner section h3 {
+        display: block;
+        font-size: 20pt;
+        padding-bottom: 15px;
+    }
+
+#match-ball {
+    position: absolute;
+    display: block;
+    top: 84.5em;
+    background-color: #2C2B2C;
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 3em;
+}
+
+    #match-ball img {
+        width: 700px;
+        margin-left: 25em;
+        border: solid 5px white;
+        filter: drop-shadow(0 0 0.2rem black);
+    }
+
+#footer {
+    position: absolute;
+    display: block;
+    top: 116em;
+    width: 100%;
+    background-color: #2C2B2C;
+    color: #F1F0DA;
+}
+
+    #footer hr {
+        opacity: .4;
+    }
+
+    #footer p {
+        opacity: .5;
+        font-weight: 100 !important;
+    }
+
+    #alt-footer {
+        position: absolute;
+        display: block;
+        top: 150em;
+        width: 100%;
+    }
+
+        #alt-footer hr {
+            opacity: .4;
+        }
+
+        #alt-footer p {
+            opacity: .5;
+            font-weight: 100 !important;
+        }
