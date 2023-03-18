@@ -7,8 +7,6 @@
     <body>
         <div id="page-wrapper">
             <div id="alt-header">
-                <img src="assets/small-logo.png" alt="logo" />
-
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -19,33 +17,308 @@
                 </nav>
 
                 <section id="alt-page-title">
-                    <img src="assets/header-col.png" />
-                    <h1>Bracket Challenge</h1>
-                </section>
-
-                <img src="assets/small_banner.png" />
-            </div>
-
-            <div id="alt-body">
-                <section>
-                    <img src="assets/groupstage.jpg" alt="Group Stage" />
-                </section>
-                <section class="group-form">
-                    <form>
-
-                    </form>
-                </section>
-                <section class="bracket-form">
-                    <form>
-
-                    </form>
-                </section>
-                <section class="submit-button">
-                    <a href="#" class="button">Submit</a>
+                    <h1>Bracket<br>
+                        Challenge</h1>
                 </section>
             </div>
-
-            <div id="main-footer">
+            <form>
+                <div id="bracket-body">
+                    <section>
+                        <img src="assets/groupstage.jpg" alt="Group Stage" />
+                    </section>
+                    <section class="group-form">
+                        <div class="group a">
+                            <fieldset class="form-box">
+                                <div class="winner">
+                                    <label for="groupAWinner">Group A Winner</label>
+                                    <input type="text" id="groupAWinner" name="groupA_winner">
+                                </div>
+                                <div class="runner-up">
+                                    <label for="runnerUpA">Group A Runner Up</label>
+                                    <input type="text" id="runnerUpA" name="groupA_runnerUp">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="group b">
+                            <fieldset class="form-box">
+                                <div class="winner">
+                                    <label for="groupBWinner">Group B Winner</label>
+                                    <input type="text" id="groupBWinner" name="groupB_winner">
+                                </div>
+                                <div class="runner-up">
+                                    <label for="runnerUpB">Group B Runner Up</label>
+                                    <input type="text" id="runnerUpB" name="groupB_runnerUp">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="group c">
+                            <fieldset class="form-box">
+                                <div class="winner">
+                                    <label for="groupCWinner">Group C Winner</label>
+                                    <input type="text" id="groupCWinner" name="groupC_winner">
+                                </div>
+                                <div class="runner-up">
+                                    <label for="runnerUpC">Group C Runner Up</label>
+                                    <input type="text" id="runnerUpC" name="groupC_runnerUp">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="group d">
+                            <fieldset class="form-box">
+                                <div class="winner">
+                                    <label for="groupDWinner">Group D Winner</label>
+                                    <input type="text" id="groupDWinner" name="groupD_winner">
+                                </div>
+                                <div class="runner-up">
+                                    <label for="runnerUpD">Group D Runner Up</label>
+                                    <input type="text" id="runnerUpD" name="groupD_runnerUp">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="group e">
+                            <fieldset class="form-box">
+                                <div class="winner">
+                                    <label for="groupEWinner">Group E Winner</label>
+                                    <input type="text" id="groupEWinner" name="groupE_winner">
+                                </div>
+                                <div class="runner-up">
+                                    <label for="runnerUpE">Group E Runner Up</label>
+                                    <input type="text" id="runnerUpE" name="groupE_runnerUp">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="group f">
+                            <fieldset class="form-box">
+                                <div class="winner">
+                                    <label for="groupFWinner">Group F Winner</label>
+                                    <input type="text" id="groupFWinner" name="groupF_winner">
+                                </div>
+                                <div class="runner-up">
+                                    <label for="runnerUpF">Group F Runner Up</label>
+                                    <input type="text" id="runnerUpF" name="groupF_runnerUp">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="group g">
+                            <fieldset class="form-box">
+                                <div class="winner">
+                                    <label for="groupGWinner">Group G Winner</label>
+                                    <input type="text" id="groupGWinner" name="groupG_winner">
+                                </div>
+                                <div class="runner-up">
+                                    <label for="runnerUpG">Group G Runner Up</label>
+                                    <input type="text" id="runnerUpG" name="groupG_runnerUp">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="group h">
+                            <fieldset class="form-box">
+                                <div class="winner">
+                                    <label for="groupAWinner">Group A Winner</label>
+                                    <input type="text" id="groupAWinner" name="groupA_winner">
+                                </div>
+                                <div class="runner-up">
+                                    <label for="runnerUpA">Group A Runner Up</label>
+                                    <input type="text" id="runnerUpA" name="groupA_runnerUp">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </section>
+                    <section class="bracket-labels">
+                        <h2>Round of 16</h2>
+                        <h2>Quarterfinals</h2>
+                        <h2>Finals</h2>
+                        <h2>Quarterfinals</h2>
+                        <h2 class="last">Round of 16</h2>
+                    </section>
+                    <section class="bracket-form">
+                        <div class="whole-grid">
+                            <div class="col-1">
+                                <div>
+                                    <fieldset class="bracket-form">
+                                        <div class="field">
+                                            <input type="text" id="WinnerA" name="winner_a" placeholder="Winner A">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="CRunnerUp" name="runnerup_c" placeholder="Runner-Up C">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <input type="text" id="WinnerE" name="winner_e" placeholder="Winner E">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="GRunnerUp" name="runnerup_g" placeholder="Runner-Up G">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <input type="text" id="WinnerC" name="winner_c" placeholder="Winner C">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="ARunnerUp" name="runnerup_a" placeholder="Runner-Up A">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <input type="text" id="WinnerG" name="winner_g" placeholder="Winner G">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="ERunnerUp" name="runnerup_e" placeholder="Runner-Up E">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div>
+                                    <fieldset class="bracket-form">
+                                        <div class="field">
+                                            <label for="WinnerAC">Game 1</label>
+                                            <input type="text" id="WinnerAC" name="winner_AC" placeholder="Winner A/C">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="WinnerEG" name="winner_EG" placeholder="Winner E/G">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <label for="Winner1CAGE">Semifinals</label>
+                                            <input type="text" id="Winner1CAGE" name="winner1_CAGE" placeholder="Winner 1">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="Winner2CAGE" name="winner2_CAGE" placeholder="Winner 2">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <label for="WinnerCA">Game 2</label>
+                                            <input type="text" id="WinnerCA" name="winner_CA" placeholder="Winner C/A">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="WinnerGE" name="winner_GE" placeholder="Winner G/E">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div>
+                                    <fieldset class="finals">
+                                        <div class="field">
+                                            <label for="final1">Finals</label>
+                                            <input type="text" id="final1" name="final_1" placeholder="Finalist 1">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="final2" name="final_2" placeholder="Finalist 2">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <label for="consolation1">3rd Place</label>
+                                            <input type="text" id="consolation1" name="consolation_1" placeholder="Consolation Team 1">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="consolation2" name="consolation_2" placeholder="Consolation Team 2">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div>
+                                    <fieldset>
+                                        <div class="field">
+                                            <label for="WinnerBD">Game 3</label>
+                                            <input type="text" id="WinnerBD" name="winner_BD" placeholder="Winner B/D">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="WinnerFH" name="winner_FH" placeholder="Winner F/H">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <label for="Winner3BDFH">Semifinals</label>
+                                            <input type="text" id="Winner3BDFH" name="winner3_BDFH" placeholder="Winner 3">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="Winner4BDFH" name="winner4_BDFH" placeholder="Winner 4">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <label for="WinnerDB">Game 4</label>
+                                            <input type="text" id="WinnerDB" name="winner_DB" placeholder="Winner D/B">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="WinnerHF" name="winner_HF" placeholder="Winner H/F">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div>
+                                    <fieldset class="bracket-form">
+                                        <div class="field">
+                                            <input type="text" id="WinnerB" name="winner_b" placeholder="Winner B">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="DRunnerUp" name="runnerup_d" placeholder="Runner-Up D">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <input type="text" id="WinnerF" name="winner_f" placeholder="Winner F">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="HRunnerUp" name="runnerup_h" placeholder="Runner-Up H">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <input type="text" id="WinnerD" name="winner_d" placeholder="Winner D">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="BRunnerUp" name="runnerup_b" placeholder="Runner-Up B">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div>
+                                    <fieldset class="form-box">
+                                        <div class="field">
+                                            <input type="text" id="WinnerH" name="winner_h" placeholder="Winner H">
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" id="FRunnerUp" name="runnerup_f" placeholder="Runner-Up F">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="submit-button">
+                        <input type="submit" value="Submit">
+                    </section>
+                </div>
+            </form>
+            <div id="bracket-footer">
                 <hr>
                 <p>© Ashley Hogue 2023</p>
             </div>
